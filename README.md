@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Sai Nihal Diddi — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Visit the portfolio](https://nihalrt.github.io/my-portfolio/)
 
-## Available Scripts
+A personal portfolio introducing my software development experience, projects,
+education, and interests. Built with Vite, vanilla JavaScript, and Three.js.
 
-In the project directory, you can run:
+## Run locally
 
-### `npm start`
+Requires Node.js 22.12 or newer and npm.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+npm ci
+npm run dev
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+npm run build
+npm run preview
+```
 
-### `npm test`
+## Update content
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `index.html`: introduction, experience, project summaries, skills, and links.
+- `src/main.js`: short project overviews and interactive controls.
+- `src/style.css`: responsive layout, typography, and motion.
+- `src/scene.js`: the 3D sculpture, loaded separately from the main page.
+- `public/Sai-Nihal-Diddi-Resume.pdf`: the downloadable resume.
+- `public/social-preview.png`: social sharing image.
 
-### `npm run build`
+The project visuals are illustrations, not live product screenshots or traffic.
+The Switchboard slider uses 100 simulated devices. The GitHub panel uses GitHub's
+public API with a one-hour cache and keeps a static profile link if the API fails.
+The site needs no secrets, backend, login, analytics, or external font service.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Publish to GitHub Pages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GitHub Pages uses the root of the existing `gh-pages` branch. Save source changes
+to `master`, then run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run deploy
+```
 
-### `npm run eject`
+The deployment script builds the site, checks out the current remote Pages branch
+in a temporary directory, and commits the new files. It uses a normal push so
+existing deployment history remains available. Git credentials need push access
+to this repository. GitHub's Pages build must finish before changes appear live.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The relative Vite base supports the `/my-portfolio/` project path.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Accessibility and performance
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Keyboard navigation, a skip link, expandable experience sections, project dialogs
+with focus restoration, a motion toggle, and reduced motion support are included.
+WebGL pauses when the sculpture is offscreen or the tab is hidden. A static
+illustration remains available if WebGL cannot initialize. Fonts are self-hosted
+WOFF2 files; their licenses are in `public/licenses`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact: [sainihaldiddi2002@gmail.com](mailto:sainihaldiddi2002@gmail.com)
